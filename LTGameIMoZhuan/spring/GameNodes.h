@@ -11,5 +11,7 @@
 
 #import "BaseNode.h"
 #import "PlayerNode.h"
+#import "NuZhuangBoss.h"
+#import "BaseBiuNode.h"
 
 #endif /* GameNodes_h */

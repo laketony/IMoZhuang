@@ -8,19 +8,30 @@
 
 #import "BaseNode.h"
 
+#import "GameGc.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface PlayerNode : BaseNode
+{
+    NSMutableArray*tagers;
+}
 
 @property(nonatomic,strong) NSString *wuqiStr;
 @property(nonatomic,strong) NSString *headStr;
 @property(nonatomic,strong) NSString *bodyStr;
 
-+ (instancetype)node:(NSString *)wuqi
-                head:(NSString *)head
-                body:(NSString *)body;
+
+@property(nonatomic,weak) id<GameGC> gcDelegte;
+
+-(void)updatePla;
 
 -(void)movetTo:(CGPoint)point;
+
+-(void)attack;
+-(void)addAttackTager:(BaseNode*)tager;
 
 @end
 

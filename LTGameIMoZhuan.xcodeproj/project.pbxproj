@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F13E355218412F5003754CD /* SPNodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13E354218412F5003754CD /* SPNodeFactory.m */; };
 		8F3DA8062180145D00129081 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DA8052180145D00129081 /* AppDelegate.m */; };
 		8F3DA8082180145D00129081 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F3DA8072180145D00129081 /* GameScene.sks */; };
 		8F3DA80A2180145D00129081 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F3DA8092180145D00129081 /* Actions.sks */; };
@@ -2063,6 +2064,11 @@
 		8F6184F22183029D00B932A6 /* NODECredit.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F6184F12183029D00B932A6 /* NODECredit.sks */; };
 		8F6184F52183046E00B932A6 /* PlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6184F42183046E00B932A6 /* PlayerNode.m */; };
 		8F6184F82183105C00B932A6 /* GameSceneSeleceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6184F72183105C00B932A6 /* GameSceneSeleceNode.m */; };
+		8FB1E37B21847B4A00EFF0E2 /* lefthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB1E37821847B4A00EFF0E2 /* lefthand.png */; };
+		8FB1E37C21847B4A00EFF0E2 /* righthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB1E37921847B4A00EFF0E2 /* righthand.png */; };
+		8FB1E37D21847B4A00EFF0E2 /* foot.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB1E37A21847B4A00EFF0E2 /* foot.png */; };
+		8FB1E3802186ECB400EFF0E2 /* NuZhuangBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1E37F2186ECB400EFF0E2 /* NuZhuangBoss.m */; };
+		8FB780E221845F8B00162BEE /* BaseBiuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780E121845F8B00162BEE /* BaseBiuNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2076,6 +2082,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F13E353218412F5003754CD /* SPNodeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPNodeFactory.h; sourceTree = "<group>"; };
+		8F13E354218412F5003754CD /* SPNodeFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPNodeFactory.m; sourceTree = "<group>"; };
 		8F3DA8012180145D00129081 /* LTGameIMoZhuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTGameIMoZhuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3DA8042180145D00129081 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F3DA8052180145D00129081 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -4148,6 +4156,14 @@
 		8F6184F42183046E00B932A6 /* PlayerNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerNode.m; sourceTree = "<group>"; };
 		8F6184F62183105C00B932A6 /* GameSceneSeleceNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameSceneSeleceNode.h; sourceTree = "<group>"; };
 		8F6184F72183105C00B932A6 /* GameSceneSeleceNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameSceneSeleceNode.m; sourceTree = "<group>"; };
+		8FB1E37821847B4A00EFF0E2 /* lefthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lefthand.png; sourceTree = "<group>"; };
+		8FB1E37921847B4A00EFF0E2 /* righthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = righthand.png; sourceTree = "<group>"; };
+		8FB1E37A21847B4A00EFF0E2 /* foot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foot.png; sourceTree = "<group>"; };
+		8FB1E37E2186ECB400EFF0E2 /* NuZhuangBoss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuZhuangBoss.h; sourceTree = "<group>"; };
+		8FB1E37F2186ECB400EFF0E2 /* NuZhuangBoss.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NuZhuangBoss.m; sourceTree = "<group>"; };
+		8FB1E3812186F8A700EFF0E2 /* GameGc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameGc.h; sourceTree = "<group>"; };
+		8FB780E021845F8B00162BEE /* BaseBiuNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseBiuNode.h; sourceTree = "<group>"; };
+		8FB780E121845F8B00162BEE /* BaseBiuNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseBiuNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4233,6 +4249,7 @@
 		8F3DA8312180153400129081 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8FB1E37721847B3F00EFF0E2 /* ssome */,
 				8F6178DF2182E0AC00B932A6 /* 骨骼和特效切片 */,
 				8F617B7F2182E0AF00B932A6 /* 技能图标 */,
 				8F617C562182E0AF00B932A6 /* 世界地图 */,
@@ -4247,12 +4264,10 @@
 		8F3DAB862180155400129081 /* spring */ = {
 			isa = PBXGroup;
 			children = (
-				8F3DAB922181EC6500129081 /* CtrlNode */,
-				8F3DAB8B2180165800129081 /* BaseNode.h */,
-				8F3DAB8C2180165800129081 /* BaseNode.m */,
 				8F3DAB8E2180169300129081 /* GameNodes.h */,
-				8F6184F32183046E00B932A6 /* PlayerNode.h */,
-				8F6184F42183046E00B932A6 /* PlayerNode.m */,
+				8FB780DE21845F4A00162BEE /* NodeSpe */,
+				8FB780DF21845F5600162BEE /* NodeBiu */,
+				8F3DAB922181EC6500129081 /* CtrlNode */,
 			);
 			path = spring;
 			sourceTree = "<group>";
@@ -4266,6 +4281,7 @@
 				8F6184F72183105C00B932A6 /* GameSceneSeleceNode.m */,
 				8F3DAB88218015C100129081 /* GameSceneTouchCtrl.h */,
 				8F3DAB89218015C100129081 /* GameSceneTouchCtrl.m */,
+				8FB1E3812186F8A700EFF0E2 /* GameGc.h */,
 			);
 			path = GameCore;
 			sourceTree = "<group>";
@@ -6374,6 +6390,40 @@
 			path = "图标";
 			sourceTree = "<group>";
 		};
+		8FB1E37721847B3F00EFF0E2 /* ssome */ = {
+			isa = PBXGroup;
+			children = (
+				8FB1E37A21847B4A00EFF0E2 /* foot.png */,
+				8FB1E37821847B4A00EFF0E2 /* lefthand.png */,
+				8FB1E37921847B4A00EFF0E2 /* righthand.png */,
+			);
+			path = ssome;
+			sourceTree = "<group>";
+		};
+		8FB780DE21845F4A00162BEE /* NodeSpe */ = {
+			isa = PBXGroup;
+			children = (
+				8F3DAB8B2180165800129081 /* BaseNode.h */,
+				8F3DAB8C2180165800129081 /* BaseNode.m */,
+				8F6184F32183046E00B932A6 /* PlayerNode.h */,
+				8F6184F42183046E00B932A6 /* PlayerNode.m */,
+				8F13E353218412F5003754CD /* SPNodeFactory.h */,
+				8F13E354218412F5003754CD /* SPNodeFactory.m */,
+				8FB1E37E2186ECB400EFF0E2 /* NuZhuangBoss.h */,
+				8FB1E37F2186ECB400EFF0E2 /* NuZhuangBoss.m */,
+			);
+			path = NodeSpe;
+			sourceTree = "<group>";
+		};
+		8FB780DF21845F5600162BEE /* NodeBiu */ = {
+			isa = PBXGroup;
+			children = (
+				8FB780E021845F8B00162BEE /* BaseBiuNode.h */,
+				8FB780E121845F8B00162BEE /* BaseBiuNode.m */,
+			);
+			path = NodeBiu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -6845,6 +6895,7 @@
 				8F6181D32182E0B100B932A6 /* m_0_emoweishi_atlas.png in Resources */,
 				8F617FE42182E0B100B932A6 /* one_green_big.png in Resources */,
 				8F6183352182E0B100B932A6 /* b_rogue_qg_skill.png in Resources */,
+				8FB1E37C21847B4A00EFF0E2 /* righthand.png in Resources */,
 				8F61754B2182C59700B932A6 /* map_7.png in Resources */,
 				8F6182F92182E0B100B932A6 /* o_priest_aycx_hurt_atlas.png in Resources */,
 				8F617ED42182E0B100B932A6 /* sl_fklf.png in Resources */,
@@ -8121,6 +8172,7 @@
 				8F6182022182E0B100B932A6 /* new_hero_team_atlas.png in Resources */,
 				8F61754E2182C59700B932A6 /* map_lhjt_d.png in Resources */,
 				8F6181F92182E0B100B932A6 /* p_warrior_melee_fx_atlas.png in Resources */,
+				8FB1E37B21847B4A00EFF0E2 /* lefthand.png in Resources */,
 				8F6181222182E0B100B932A6 /* g_rogue_melee_atlas.png in Resources */,
 				8F617FBB2182E0B100B932A6 /* m_5_dulande_icon_big.png in Resources */,
 				8F61830C2182E0B100B932A6 /* m_16_panyashicong_atlas.png in Resources */,
@@ -8457,6 +8509,7 @@
 				8F617EBE2182E0B100B932A6 /* m_2_gelabutuoke_hq.png in Resources */,
 				8F617F132182E0B100B932A6 /* m_9_ruiwendaier_icon.png in Resources */,
 				8F6184842182E0B200B932A6 /* defendcrystal.png in Resources */,
+				8FB1E37D21847B4A00EFF0E2 /* foot.png in Resources */,
 				8F61807D2182E0B100B932A6 /* g_warrior_tank_icon.png in Resources */,
 				8F617E442182E0B100B932A6 /* SciFi Atlas_mip_4.png in Resources */,
 				8F6180E82182E0B100B932A6 /* m_2_fankelifu_fc_hurt_atlas.png in Resources */,
@@ -8518,9 +8571,12 @@
 				8F3DA80D2180145D00129081 /* GameScene.m in Sources */,
 				8F6184F02182FA1D00B932A6 /* BaseViewController.m in Sources */,
 				8F3DAB8A218015C100129081 /* GameSceneTouchCtrl.m in Sources */,
+				8FB780E221845F8B00162BEE /* BaseBiuNode.m in Sources */,
+				8F13E355218412F5003754CD /* SPNodeFactory.m in Sources */,
 				8F3DAB992182AB5400129081 /* LTSpriteMath.m in Sources */,
 				8F6184F52183046E00B932A6 /* PlayerNode.m in Sources */,
 				8F3DAB8D2180165800129081 /* BaseNode.m in Sources */,
+				8FB1E3802186ECB400EFF0E2 /* NuZhuangBoss.m in Sources */,
 				8F6184F82183105C00B932A6 /* GameSceneSeleceNode.m in Sources */,
 				8F3DAB952181EC7C00129081 /* CtrlLine.m in Sources */,
 				8F3DA8102180145D00129081 /* GameViewController.m in Sources */,

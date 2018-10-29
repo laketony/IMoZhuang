@@ -52,6 +52,8 @@
                     </view>
                     <connections>
                         <outlet property="gameview" destination="EQW-lH-qCQ" id="7Gq-hi-CUa"/>
+                        <outlet property="iv_bgview" destination="ttL-RJ-NZz" id="rOw-Bg-zxU"/>
+                        <outlet property="iv_fgview" destination="6qj-Ln-fJO" id="0cl-UD-qfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

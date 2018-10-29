@@ -11,6 +11,9 @@
 
 @implementation GameViewController{
     
+    __weak IBOutlet UIImageView *iv_fgview;
+    __weak IBOutlet UIImageView *iv_bgview;
+    
     __weak IBOutlet SKView *gameview;
 }
 
@@ -30,6 +33,10 @@
     
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
+    
+    int row = rand()%20+1;
+    [iv_bgview setImage: [UIImage imageNamed:[NSString stringWithFormat:@"map_%d.png",row]]];
+    [iv_fgview setImage: [UIImage imageNamed:[NSString stringWithFormat:@"map_%d_d.png",row]]];
 }
 
 - (BOOL)shouldAutorotate {

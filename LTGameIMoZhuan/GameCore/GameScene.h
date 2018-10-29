@@ -10,6 +10,9 @@
 #import "GameSceneTouchCtrl.h"
 #import "GameSceneSeleceNode.h"
 
-@interface GameScene : GameSceneSeleceNode
+#import "GameGc.h"
+
+
+@interface GameScene : GameSceneSeleceNode<GameGC>
 
 @end
