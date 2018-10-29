@@ -4165,7 +4165,7 @@
 		8FB1E3812186F8A700EFF0E2 /* GameGc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameGc.h; sourceTree = "<group>"; };
 		8FB1E3822187065600EFF0E2 /* GameSceneBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameSceneBase.h; sourceTree = "<group>"; };
 		8FB1E3832187065600EFF0E2 /* GameSceneBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameSceneBase.m; sourceTree = "<group>"; };
-		8FB1E38521870A3900EFF0E2 /* README_UML.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_UML.md; sourceTree = "<group>"; };
+		8FB1E38521870A3900EFF0E2 /* README.UML.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.UML.md; sourceTree = "<group>"; };
 		8FB780E021845F8B00162BEE /* BaseBiuNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseBiuNode.h; sourceTree = "<group>"; };
 		8FB780E121845F8B00162BEE /* BaseBiuNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseBiuNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -4269,7 +4269,7 @@
 			isa = PBXGroup;
 			children = (
 				8F3DAB8E2180169300129081 /* GameNodes.h */,
-				8FB1E38521870A3900EFF0E2 /* README_UML.md */,
+				8FB1E38521870A3900EFF0E2 /* README.UML.md */,
 				8FB780DE21845F4A00162BEE /* NodeSpe */,
 				8FB780DF21845F5600162BEE /* NodeBiu */,
 				8F3DAB922181EC6500129081 /* CtrlNode */,
