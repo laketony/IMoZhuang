@@ -27,8 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 
--(SKNode*)nodeInGoodTeamAtPoint:(CGPoint)p;
-
+-(PlayerNode *)nodeInGoodTeamAtPoint:(CGPoint)p;
+-(BaseNode *)nodeInBadTeamAtPoint:(CGPoint)p;
 @end
 
 NS_ASSUME_NONNULL_END

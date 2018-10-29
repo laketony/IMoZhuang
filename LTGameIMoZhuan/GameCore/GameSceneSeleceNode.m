@@ -18,18 +18,32 @@
     bNode = [NSMutableArray array];
 }
 
--(SKNode*)nodeInGoodTeamAtPoint:(CGPoint)p{
+-(PlayerNode *)nodeInGoodTeamAtPoint:(CGPoint)p{
     NSArray * nodes = [self nodesAtPoint:p];
     
     for (SKNode * node in nodes) {
         if([gNode containsObject:node]){
             NSLog(@"可控制");
-            return node;
+            return (PlayerNode *)node;
         }else{
             NSLog(@"不可控制");
         }
     }
     return nil;
 }
+-(BaseNode *)nodeInBadTeamAtPoint:(CGPoint)p{
+    NSArray * nodes = [self nodesAtPoint:p];
+    
+    for (SKNode * node in nodes) {
+        if([bNode containsObject:node]){
+            NSLog(@"可控制");
+            return (BaseNode *)node;
+        }else{
+            NSLog(@"不可控制");
+        }
+    }
+    return nil;
+}
+
 
 @end

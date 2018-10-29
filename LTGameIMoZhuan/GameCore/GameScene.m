@@ -8,15 +8,9 @@
 
 #import "GameScene.h"
 
-#import "SPNodeFactory.h"
-#import "BaseBiuNode.h"
-
-#import "CtrlLine.h"
-#import "LTSpriteMath.h"
-
 @implementation GameScene
 {
-    SKNode *selectNode;
+    PlayerNode *selectNode;
     CtrlLine *lineCtrl;
 }
 
@@ -52,7 +46,7 @@
     NSArray *attackActionArray = @[
                                    [SKAction waitForDuration:0.01],
                                    [SKAction  performSelector:@selector(attack) onTarget:node],
-                                   [SKAction waitForDuration:2],
+                                   [SKAction waitForDuration:0.6],
                                    ];
     [node runAction: [SKAction repeatActionForever:[SKAction sequence:attackActionArray]]];
     
@@ -148,6 +142,14 @@
 - (void)touchMovedToPoint:(CGPoint)pos {
     CGPoint linePoint = [self convertPoint:pos toNode:lineCtrl];
     [lineCtrl lineto:linePoint];
+    
+  
+    if(selectNode != nil){
+        BaseNode *bad = [self nodeInBadTeamAtPoint:pos];
+        if(bad == nil) return;
+        [selectNode addAttackTager:bad];
+    }
+    
 }
 - (void)touchUpAtPoint:(CGPoint)pos {
     

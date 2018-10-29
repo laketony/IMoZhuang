@@ -11,6 +11,14 @@
 @implementation BaseNode
 
 
+-(void)initNodesData{
+    
+}
+
+-(SKAction *)divhp{
+    return nil;
+}
+
 -(void)movetTo:(CGPoint)point{
     
     
@@ -44,12 +52,6 @@
 }
 
 
--(SKAction *)divhp{
-    return nil;
-}
 
--(void)initNodesData{
-   
-}
 
 @end

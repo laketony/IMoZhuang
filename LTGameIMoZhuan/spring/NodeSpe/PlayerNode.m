@@ -38,7 +38,9 @@
 }
 
 -(void)addAttackTager:(BaseNode*)tager{
-    [tagers addObject:tager];
+    if(![tagers containsObject:tager]){
+        [tagers addObject:tager];
+    }
 }
 
 
