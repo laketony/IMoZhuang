@@ -11,6 +11,7 @@
 
 #import "BaseNode.h"
 #import "PlayerNode.h"
+#import "PlayerDZNode.h" // 盗贼
 #import "NuZhuangBoss.h"
 #import "BaseBiuNode.h"
 

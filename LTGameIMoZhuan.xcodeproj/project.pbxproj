@@ -2069,6 +2069,7 @@
 		8FB1E37D21847B4A00EFF0E2 /* foot.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB1E37A21847B4A00EFF0E2 /* foot.png */; };
 		8FB1E3802186ECB400EFF0E2 /* NuZhuangBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1E37F2186ECB400EFF0E2 /* NuZhuangBoss.m */; };
 		8FB1E3842187065600EFF0E2 /* GameSceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1E3832187065600EFF0E2 /* GameSceneBase.m */; };
+		8FB1E3882187F14800EFF0E2 /* PlayerDZNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1E3872187F14800EFF0E2 /* PlayerDZNode.m */; };
 		8FB780E221845F8B00162BEE /* BaseBiuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780E121845F8B00162BEE /* BaseBiuNode.m */; };
 /* End PBXBuildFile section */
 
@@ -4166,6 +4167,8 @@
 		8FB1E3822187065600EFF0E2 /* GameSceneBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameSceneBase.h; sourceTree = "<group>"; };
 		8FB1E3832187065600EFF0E2 /* GameSceneBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameSceneBase.m; sourceTree = "<group>"; };
 		8FB1E38521870A3900EFF0E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8FB1E3862187F14800EFF0E2 /* PlayerDZNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerDZNode.h; sourceTree = "<group>"; };
+		8FB1E3872187F14800EFF0E2 /* PlayerDZNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerDZNode.m; sourceTree = "<group>"; };
 		8FB780E021845F8B00162BEE /* BaseBiuNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseBiuNode.h; sourceTree = "<group>"; };
 		8FB780E121845F8B00162BEE /* BaseBiuNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseBiuNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -6414,6 +6417,8 @@
 				8F3DAB8C2180165800129081 /* BaseNode.m */,
 				8F6184F32183046E00B932A6 /* PlayerNode.h */,
 				8F6184F42183046E00B932A6 /* PlayerNode.m */,
+				8FB1E3862187F14800EFF0E2 /* PlayerDZNode.h */,
+				8FB1E3872187F14800EFF0E2 /* PlayerDZNode.m */,
 				8F13E353218412F5003754CD /* SPNodeFactory.h */,
 				8F13E354218412F5003754CD /* SPNodeFactory.m */,
 				8FB1E37E2186ECB400EFF0E2 /* NuZhuangBoss.h */,
@@ -8585,6 +8590,7 @@
 				8F6184F52183046E00B932A6 /* PlayerNode.m in Sources */,
 				8F3DAB8D2180165800129081 /* BaseNode.m in Sources */,
 				8FB1E3802186ECB400EFF0E2 /* NuZhuangBoss.m in Sources */,
+				8FB1E3882187F14800EFF0E2 /* PlayerDZNode.m in Sources */,
 				8F6184F82183105C00B932A6 /* GameSceneSeleceNode.m in Sources */,
 				8F3DAB952181EC7C00129081 /* CtrlLine.m in Sources */,
 				8F3DA8102180145D00129081 /* GameViewController.m in Sources */,

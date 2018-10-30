@@ -34,9 +34,19 @@
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
+   
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn addTarget:self action:@selector(bgChange) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+-(void)bgChange{
     int row = rand()%20+1;
     [iv_bgview setImage: [UIImage imageNamed:[NSString stringWithFormat:@"map_%d.png",row]]];
     [iv_fgview setImage: [UIImage imageNamed:[NSString stringWithFormat:@"map_%d_d.png",row]]];
+}
+- (IBAction)btnFxLeft:(id)sender {
+    [self bgChange];
 }
 
 - (BOOL)shouldAutorotate {

@@ -17,6 +17,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PlayerNode : BaseNode
 {
     NSMutableArray*tagers;
+    
+    
+    SKSpriteNode *head;
+    SKSpriteNode *body;
+    SKSpriteNode *wuqi;
+    SKSpriteNode* footL;
+    SKSpriteNode* footR ;
+    SKSpriteNode* lefthand ;
+    
+    NSArray *act_ud;
+    NSArray *act_du;
+    NSArray *act_dul;
 }
 
 @property(nonatomic,strong) NSString *wuqiStr;
@@ -26,12 +38,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,weak) id<GameGC> gcDelegte;
 
+@property (assign) id targetScene;
+@property (assign) SEL action;
+
+-(void)initPla;
 -(void)updatePla;
 
--(void)movetTo:(CGPoint)point;
 
 -(void)attack;
 -(void)addAttackTager:(BaseNode*)tager;
+
+
 
 @end
 

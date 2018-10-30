@@ -10,14 +10,7 @@
 
 @implementation PlayerNode
 {
-
-    SKSpriteNode *head;
-    SKSpriteNode *body;
-    SKSpriteNode *wuqi;
-    SKSpriteNode* footL;
-    SKSpriteNode* footR ;
-    SKSpriteNode* lefthand ;
-
+    
 }
 
 
@@ -35,30 +28,27 @@
 -(void)initNodesData{
     [super initNodesData];
     tagers = [NSMutableArray array];
-}
-
--(void)addAttackTager:(BaseNode*)tager{
-    if(![tagers containsObject:tager]){
-        [tagers addObject:tager];
-    }
-}
-
-
--(SKAction *)divhp{
-    NSLog(@"divhp :\n");
-    //[self setScale:10];
-    [self runAction: [SKAction sequence:@[
-                                          [SKAction fadeAlphaTo:0.2 duration:0.03],
-                                          [SKAction fadeAlphaTo:1 duration:0.03],
-                                          [SKAction fadeAlphaTo:0.2 duration:0.03],
-                                          [SKAction fadeAlphaTo:1 duration:0.03]
-                                          ]]];
-
     
-    return [SKAction scaleBy:0.4 duration:0.3];
+    act_ud = @[
+               [SKAction moveByX:-4 y:10 duration:0.2],
+               [SKAction moveByX:4 y:-10 duration:0.2]
+               ];
+    
+    act_du = @[
+               [SKAction moveByX:4 y:-10 duration:0.2],
+               [SKAction moveByX:-4 y:10 duration:0.2]
+               ];
+    
+    act_dul = @[
+                [SKAction moveByX:2 y:-4 duration:0.2],
+                [SKAction moveByX:-2 y:4 duration:0.2]
+                ];
 }
+
+
 
 -(void)initPla{
+    
     wuqi = [SKSpriteNode spriteNodeWithImageNamed:self.wuqiStr];
     [wuqi setPosition:CGPointMake(-40, -16)];
     [wuqi setAnchorPoint:CGPointMake(0.8, 0.2)];
@@ -93,10 +83,8 @@
     [wuqi setPosition:CGPointMake(-40, -16)];
     [wuqi setAnchorPoint:CGPointMake(0.8, 0.2)];
 
-    
     [body setTexture:[SKTexture textureWithImageNamed:self.bodyStr]];
 
-    
     [head setTexture:[SKTexture textureWithImageNamed:self.headStr]];
     [head setPosition:CGPointMake(0, 60)];
 
@@ -106,6 +94,7 @@
 -(void)attack{
     [self.gcDelegte attackFrom:self tagers:tagers];
 }
+
 
 
 
@@ -134,8 +123,10 @@
 }
 
 -(void)fmsStand{
+    [super fmsStand];
     [head removeAllActions];
     [body removeAllActions];
+    
     [wuqi removeAllActions];
     [wuqi runAction: [SKAction moveTo:CGPointMake(-40, -16) duration:0.1]];
     
@@ -152,45 +143,51 @@
 
 
 -(void)fmsRuning{
-    
-    
-    NSArray *ud = @[
-                    [SKAction moveByX:-4 y:10 duration:0.2],
-                    [SKAction moveByX:4 y:-10 duration:0.2]
-                    ];
-    
-    NSArray *du = @[
-                    [SKAction moveByX:4 y:-10 duration:0.2],
-                    [SKAction moveByX:-4 y:10 duration:0.2]
-                    ];
-    
-    NSArray *dul = @[
-                    [SKAction moveByX:2 y:-4 duration:0.2],
-                    [SKAction moveByX:-2 y:4 duration:0.2]
-                    ];
+    [super fmsRuning];
     
     [wuqi setPosition:CGPointMake(-40, -16)];
     
-    [wuqi runAction:[SKAction repeatActionForever:[SKAction sequence:du]] withKey:@"fmsRuning" ];
+    [wuqi runAction:[SKAction repeatActionForever:[SKAction sequence:act_du]] withKey:@"fmsRuning" ];
     
     
     
     [head setPosition:CGPointMake(0, 60)];
 
-    [head runAction:[SKAction repeatActionForever:[SKAction sequence:dul]] withKey:@"fmsRuning" ];
+    [head runAction:[SKAction repeatActionForever:[SKAction sequence:act_dul]] withKey:@"fmsRuning" ];
     
 
     [footL setPosition:CGPointMake(-16, -50)];
-    [footL runAction:[SKAction repeatActionForever:[SKAction sequence:ud]] withKey:@"fmsRuning" ];
+    [footL runAction:[SKAction repeatActionForever:[SKAction sequence:act_ud]] withKey:@"fmsRuning" ];
     
     
     [footR setPosition:CGPointMake(16, -50)];
-    [footR runAction:[SKAction repeatActionForever:[SKAction sequence:du]] withKey:@"fmsRuning" ];
+    [footR runAction:[SKAction repeatActionForever:[SKAction sequence:act_du]] withKey:@"fmsRuning" ];
     
     [lefthand setPosition:CGPointMake(34, -16)];
-    [lefthand runAction:[SKAction repeatActionForever:[SKAction sequence:ud]] withKey:@"fmsRuning" ];
+    [lefthand runAction:[SKAction repeatActionForever:[SKAction sequence:act_ud]] withKey:@"fmsRuning" ];
     
     
+}
+
+-(void)addAttackTager:(BaseNode*)tager{
+    if(![tagers containsObject:tager]){
+        [tagers addObject:tager];
+    }
+}
+
+
+-(SKAction *)divhp{
+    NSLog(@"divhp :\n");
+    //[self setScale:10];
+    [self runAction: [SKAction sequence:@[
+                                          [SKAction fadeAlphaTo:0.2 duration:0.03],
+                                          [SKAction fadeAlphaTo:1 duration:0.03],
+                                          [SKAction fadeAlphaTo:0.2 duration:0.03],
+                                          [SKAction fadeAlphaTo:1 duration:0.03]
+                                          ]]];
+    
+    
+    return [SKAction scaleBy:0.4 duration:0.3];
 }
 
 @end

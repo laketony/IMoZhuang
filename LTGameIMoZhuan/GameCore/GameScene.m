@@ -55,7 +55,7 @@
     PlayerNode *nodeLR = [SPNodeFactory playOne:@"w_weapon_jf" head:@"p_t_helmet_trsf" body:@"p_t_coat_trsf"];
     [nodeLR setPosition:CGPointMake(-770, -140)];
     
-    [nodeLR movetTo:CGPointMake(-440, -140)];
+    [nodeLR movetTo:CGPointMake(-440, 40)];
     [nodeLR setGcDelegte:self];
     [nodeLR addAttackTager:node];
     
@@ -79,7 +79,28 @@
     [self addChild:node1];
     
     [gNode addObject:node1];
- 
+    
+    
+    
+    
+    PlayerNode *nodeNM = [SPNodeFactory playOne:@"p_t_weapon_wmhf" head:@"p_t_helmet_ss" body:@"p_t_back_ss"];
+    [nodeNM setPosition:CGPointMake(-770, -40)];
+    
+    [nodeNM movetTo:CGPointMake(-440, -140)];
+    
+    [nodeNM setGcDelegte:self];
+    [self addChild:nodeNM];
+    [gNode addObject:nodeNM];
+    
+    PlayerDZNode *nodeDZ = [SPNodeFactory playOne:@"g_t_weapon_jezh" head:@"g_t_helmet_lltk"
+                                           body:@"g_t_back_zy" wuqiF:@"g_t_weapon_jezh"];
+    [nodeDZ setPosition:CGPointMake(-770, -40)];
+    
+    [nodeDZ movetTo:CGPointMake(-340, 140)];
+    
+    [nodeDZ setGcDelegte:self];
+    [self addChild:nodeDZ];
+    [gNode addObject:nodeDZ];
     
 }
 
@@ -100,7 +121,7 @@
 
 -(void)attackFrom:(SKNode*)attacker_node tagers:(NSArray *)tagers_node
 {
-    NSLog(@"attacker_node:%@ ",attacker_node);
+    //NSLog(@"attacker_node:%@ ",attacker_node);
     for(SKNode* tager_node in tagers_node){
         BaseBiuNode *biu = [BaseBiuNode node];
         CGPoint spoint = [attacker_node convertPoint:CGPointMake(-10*attacker_node.xScale, 2*attacker_node.yScale)
@@ -121,6 +142,10 @@
                                              [SKAction removeFromParent]
                                              ]];
         [biu runAction:niu];
+        
+        [biu setAlpha:0];
+        [biu runAction:[SKAction fadeAlphaTo:1.0 duration:0.1]];
+      
         
         [self addChild:biu];
     }

@@ -13,9 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseNode : SKNode
 
--(void)movetTo:(CGPoint)point;
 -(SKAction *)divhp;
 -(void)initNodesData;
+
+
+-(void)movetTo:(CGPoint)point;
+-(void)fmsStand;
+-(void)fmsRuning;
+
 @end
 
 NS_ASSUME_NONNULL_END

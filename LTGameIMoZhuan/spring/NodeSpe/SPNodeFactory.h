@@ -17,7 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 +(PlayerNode*)playOne:(NSString *)wuqi
                  head:(NSString *)head
                  body:(NSString *)body;
-
+//盗贼
++(PlayerDZNode*)playOne:(NSString *)wuqi
+                   head:(NSString *)head
+                   body:(NSString *)body
+                  wuqiF:(NSString *)wuqiF;
 @end
 
 NS_ASSUME_NONNULL_END

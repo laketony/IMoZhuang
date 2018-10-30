@@ -24,4 +24,22 @@
     return node;
 }
 
+
+
++(PlayerDZNode*)playOne:(NSString *)wuqi
+                 head:(NSString *)head
+                 body:(NSString *)body
+                   wuqiF:(NSString *)wuqiF
+{
+    PlayerDZNode *node =  [PlayerDZNode node];
+    
+    node.wuqiStr =wuqi;
+    node.headStr =head;
+    node.bodyStr =body;
+    node.wuqiFStr =wuqiF;
+    
+    [node updatePla];
+    return node;
+}
+
 @end
